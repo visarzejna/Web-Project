@@ -1,0 +1,88 @@
+body {
+    background-image: url('../Images/AboutUsBackground.jpg');
+    width: 100%;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 700px;
+    background-color: #edf2f4;
+    box-shadow: 10px 10px 10px 0px #000000;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.info p{
+    width: 600px;
+    padding-left: 50px;
+    font-size: large;
+    font-family: italic;
+    line-height: 1.5;
+    color: black;
+}
+.Location{
+    margin-top: 50px;
+    margin-left: 300px;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.Location img {
+    width: 60px;
+    height: auto;
+}
+.BackToMain{
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
+}
+.BackToMain img{
+    width: 100px;
+    height: auto;
+}
+@media screen and (max-width:900px){
+    body {
+        width: 100%;
+    }
+    .info {
+        width: 405px;
+        font-size: small;
+        left: 0;
+    }
+    .info p {
+        width: 350px;
+        padding-left: 10px;
+        font-size: small;
+    }
+    .Location{
+        
+        margin-left: 150px;
+   
+    }
+}
+@media screen and (max-width:400px){
+    body {
+        width: 100%;
+    }
+    .info {
+        width: 375px;
+        font-size: x-small;
+        left: 0;
+    }
+    .info p {
+        width: 350px;
+        padding-left: 10px;
+        font-size: small;
+    }
+    .Location{
+        
+        margin-left: 135px;
+    }
+}
