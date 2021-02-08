@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-image: url('../Images/AboutUsBackground.jpg');
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    height: 100px;
+}
+
+.info {
+    width: 600px;
+    height: 600px;
+    background-color:   #edf2f4;
+    box-shadow: 10px 10px 10px 0px #000000;
+    margin:  auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.info p{
+    
+    width: 500px;
+    padding: 50px 0 50px 50px;
+    font-size: large;
+    line-height: 1.5;
+    color: black;
+}
+.aBtn{
+    display: flex;
+    flex-direction: column;
+}
+.Location{
+    
+    margin: 0px auto;
+    
+    text-decoration: none;
+    color: black;
+    
+}
+
+.Location img {
+    width: 60px;
+    height: auto;
+}
+.BackToMain{
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+}
+.BackToMain img{
+    width: 100px;
+    height: auto;
+}
+@media screen and (max-width:768px){
+    .info{
+        margin-top: 200px;
+    }   
+}

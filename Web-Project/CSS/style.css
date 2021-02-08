@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+}
+.brandLogo{
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+.brandLogo img{
+    display: block;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    
+    
+}
+.mainArticle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    margin-top: 60px;
+    background-color: 	#f7f7f7;
+    box-shadow: 10px 10px 30px 0px #4d4d4d;
+    
+}
+.Article1 {
+    width: 45%;
+    font-size: 42px;
+    padding-top: 100px;
+    margin-left: 10px;
+    margin-right: 30px;
+   
+    
+}
+.Article2{
+    height: 600px;
+    
+}
+.Article2 img {
+    height: 600px;
+    
+}
+.watchList img{
+    height: 300px;
+    width: auto;
+}
+.otherWatches{
+    height: 400px;
+    position: relative;
+    background-color: #f7f7f7;
+    margin-top: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 30px 0px #4d4d4d;
+    
+}
+.otherWatches a {
+    text-decoration: none;
+    color: black;
+}
+.watchList {
+    
+    font-family: 'Roboto', sans-serif;  
+    font-weight: bolder;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px;
+    
+    
+}
+.watchList:hover {
+    
+    transition: 500ms;
+    transform: scale(1.2, 1.2);
+}
+#Center {
+    text-align: center;
+}
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    cursor: pointer;
+}
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    cursor: pointer;
+}
+.active{
+    transition: all 2s ease-out;
+    opacity: 1;
+    
+}
+.not-active{
+    position: absolute;
+    opacity: 0;
+    
+}
+.shopBtn {
+    background-color: #f7f7f7;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    box-shadow: 0px 10px 10px 0px #4d4d4d;
+    position: absolute;
+}
+.shopBtn a{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+
+}
+.shopBtn a:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+footer {
+    margin-top: 300px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    background-color: #3A3A38;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    
+}
+footer li {
+    list-style-type: none;
+    padding: 5px;
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.RightsReserved {
+    margin-left: 40%;
+    font-weight: bold;
+    
+}
+.FlexFotter {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+    justify-content: space-around;
+}
+.FlexFotter img {
+    width: 300px;
+    height: auto;
+}
+.FooterBold{
+    font-weight: bolder;
+    font-size: large;
+}
+
+@media screen and (max-width:768px){
+
+    .RightsReserved{
+        font-size: small;
+    }
+    .Article2 img {
+        height: 400px;
+        
+    }
+    .FlexFotter{
+        
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+    .FlexFotter ul{
+        padding-left: 0;
+    }
+}
