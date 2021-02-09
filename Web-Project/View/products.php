@@ -6,6 +6,7 @@
     <title>Vincero products</title>
     <link href="../CSS/stylePR.css" rel="stylesheet">
     <link href="../CSS/style.css" rel="stylesheet">
+    <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/1146/1146562.svg" type="image/x-icon">
 </head>
 <body>
     <?php  include '../Components/header.php'?>

@@ -52,7 +52,6 @@ body {
     width: auto;
 }
 .otherWatches{
-    height: 400px;
     position: relative;
     background-color: #f7f7f7;
     margin-top: 200px;
@@ -103,7 +102,7 @@ body {
 .active{
     transition: all 2s ease-out;
     opacity: 1;
-    
+    z-index: 1;
 }
 .not-active{
     position: absolute;
@@ -181,7 +180,9 @@ footer a{
     }
     .Article2 img {
         height: 400px;
-        
+    }
+    .Article1{
+        font-size: 32px;
     }
     .FlexFotter{
         
@@ -192,5 +193,10 @@ footer a{
     }
     .FlexFotter ul{
         padding-left: 0;
+    }
+}
+@media screen and (max-width:600px){
+    .Article2 img{
+        height: 205px;
     }
 }
