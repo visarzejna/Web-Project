@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    background-color:  #cce6ff;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 30px; 
+    color:black;
+}
+.container {
+    background-color:  #cce6ff;
+    display: flex;
+    height: 85vh;
+    justify-content: space-around;
+    align-items: center;
+      width: 100%;
+}
+.photo{
+    width: 500px;
+    margin: 0;
+}
+.right a, .left a {
+    text-decoration: none;   
+}
+.right:hover , .left:hover{
+    transition: 500ms;
+    transform: scale(1.2, 1.2);  
+    color: black;
+}
+.underImg{
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px;
+    margin: 0;
+    color: black;
+}
+.footer {
+    background-color: #1f1f1f;
+    padding-top: 50px;
+}
+.backToMain{
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px){
+    .container{
+        flex-direction: column;
+        height: 200vh;
+        
+    }
+}
+@media screen and (max-width:500px){
+    .photo{
+        width: 375px;
+    }
+}

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+header {
+    /*position: fixed;*/
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    flex-wrap: wrap;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    z-index: 2;
+}
+
+.headerList {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    flex-wrap: wrap;
+    background-color: #3A3A38;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+.ThreeLines {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+
+
+}
+
+.leftSideHeader {
+    flex-direction: row;
+
+
+}
+
+.leftSideHeader ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 5;
+    padding: 0;
+}
+
+.leftSideHeader a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.leftSideHeader li:hover {
+    font-size: large;
+    transition: 500ms;
+
+}
+
+.rightSideHeader {
+    margin-top: 15px;
+    margin-right: 20px;
+
+}
+
+.LoginButton {
+    color: whitesmoke;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.LoginButton:hover {
+    background-color: #1f1f1f;
+    color: white;
+    font-size: large;
+    transition: 500ms;
+}
+
+.popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    background-color: #242424;
+    color: whitesmoke;
+    padding: 10px;
+    width: fit-content;
+    font-weight: bolder;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+
+    background-color: #474747;
+    transition: 500ms;
+}
+
+.hideLogin {
+    display: block;
+}
+
+input {
+    margin: 20px auto;
+    display: inherit;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px;
+    cursor: pointer;
+
+}
+
+.popupcontent {
+    height: 400px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.popupcontent span {
+
+    font-weight: bold;
+
+
+}
+
+.userPhoto {
+    width: 100px;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+#RegisterInput {
+
+    display: none;
+    border-radius: 4px;
+    flex-direction: column;
+}
+
+#rEmail, #rUName, #rPass {
+    margin: 20px auto;
+
+    width: 50%;
+    padding: 8px;
+
+    border-radius: 4px;
+}
+
+#registerButton {
+    background-color: #242424;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    width: fit-content;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+
+    }
+
+    .ThreeLines {
+        display: block;
+
+    }
+
+    .headerList {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #242424;
+        top: 50px;
+        left: -100%;
+        transition: all .5s;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+    .leftSideHeader {
+        top: 0;
+    }
+
+    .leftSideHeader ul {
+        flex-direction: column;
+
+    }
+
+    .leftSideHeader ul li {
+        padding: 20px;
+    }
+
+    .rightSideHeader {
+        text-align: center;
+        margin-right: -15px;
+    }
+
+    #check:checked ~ .headerList {
+        left: 0;
+        height: 100vh;
+    }
+}
