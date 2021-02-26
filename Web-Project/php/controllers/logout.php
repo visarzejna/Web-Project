@@ -1,4 +1,5 @@
 <?php
 session_start();
 session_destroy();
-header('Location:../../views/Vincero.php');
+session_unset();
+header('Location:../views/Vincero.php');

@@ -13,8 +13,7 @@ body {
 section{
     height: 100px;
 }
-
-.content {
+.contactForm{
     width: 600px;
     height: 600px;
     background-color:   #edf2f4;
@@ -23,6 +22,44 @@ section{
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contactForm input{
+    width: 200px;
+}
+.message{
+    display: flex;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    bottom: 10px;
+    background-color: #2d2d2d;
+    color: white;
+    justify-content: center;
+    margin-top: 50px;
+}
+.socialMedia{
+    display: flex;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    color: white;
+    justify-content: center;
+}
+.content {
+    width: 600px;
+    height: 700px;
+    background-color:   #edf2f4;
+    box-shadow: 10px 10px 10px 0px #000000;
+    margin:  auto;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
 }
 .content a{
     text-decoration: none;
@@ -33,6 +70,37 @@ section{
     width: 100px;
     height: auto;
 
+}
+.form-input{
+    background-color: transparent;
+    width: 500px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(57, 100, 139);
+    color: rgb(37, 37, 37);
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.name-subject{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.name-subject input {
+    margin-left: 0;
+    margin-right: 0;
+}
+.submitBtn {
+    background-color: #2d2d2d;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 .BackToMain{
     margin-top: 50px;
